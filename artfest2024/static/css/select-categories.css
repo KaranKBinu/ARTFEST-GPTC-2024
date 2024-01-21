@@ -1,0 +1,77 @@
+.cat-container {
+    display: flex;
+    flex-wrap: wrap; /* Added for responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+  }
+  .msg-container {
+    padding-top: 20px; /* Adjusted padding for responsiveness */
+    margin: 0 auto; /* Center align on small screens */
+  }
+  .msg {
+    width: 100%; /* Adjusted width for responsiveness */
+    color: green;
+  }
+
+
+  .user-info {
+    width: 100%; /* Adjusted width for responsiveness */
+    background: rgb(0, 0, 0, 0.01);
+    padding: 20px;
+  }
+  .checkboxes-container {
+    width: 100%; /* Adjusted width for responsiveness */
+    text-align: center;
+    padding: -80%;
+    font-size:10px;
+  }
+  input[type='checkbox']{
+    font-size:20px;
+  }
+  input[type='checkbox']:hover{
+    color:lightgreen;
+  }
+  table {
+    width: 80%;
+    border-radius:50%;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-radius:8%;
+  }
+
+  .table-bordered tbody tr:nth-child(even) {
+    background-color: #ececec42;
+    color:black;
+  }
+
+  .table-bordered tbody tr:nth-child(odd){
+    background-color: #ffe7e744;
+    color:black;
+    
+  }
+  .table-bordered tbody tr:nth-child(even):hover,
+  th:hover,
+  td:hover,
+  td p:hover{
+    color:lightblue;
+
+  }
+  .table-bordered tbody tr:nth-child(odd):hover, 
+  th:hover,
+  td:hover,
+  td p:hover{
+    color:lightblue;
+
+    
+  }
+  .toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color:red;
+  }

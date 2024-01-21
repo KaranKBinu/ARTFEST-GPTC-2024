@@ -1,0 +1,160 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/select-categories.css' %}">
+</head>
+<div class="toast-container" id="toast-container">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true" data-delay="2000">
+    <div class="toast-header">
+      <strong class="mr-auto">Notification</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      <!-- Toast body content will be dynamically added here -->
+    </div>
+  </div>
+</div>
+<div class="container-fluid cat-container">
+  {% if userdetails %}
+  <div class="user-info col-md-6">
+    <table border='2' class="table table-bordered">
+      <tr>
+        <th>Name:</th>
+        <td>{{ userdetails.student_name }}</td>
+      </tr>
+      <tr>
+        <th>Admission Number:</th>
+        <td>{{ userdetails.student_admn_no }}</td>
+      </tr>
+      <tr>
+        <th>Phone:</th>
+        <td>{{ userdetails.student_phone }}</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>{{ userdetails.student_email }}</td>
+      </tr>
+      <tr>
+        <th>House Name:</th>
+        <td>{{ userdetails.house_name }}</td>
+      </tr>
+      <tr>
+        <th>Gender:</th>
+        <td>{{ userdetails.Gender }}</td>
+      </tr>
+    </table>
+  </div>
+  {% else %}
+  <p class="col-12 text-center">No User Details Found.</p>
+  {% endif %}
+</div>
+<form method="post" action="{% url 'select_categories' %}">
+  {% csrf_token %}
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="thead-primery">
+        <tr>
+          <th>Program Name</th>
+          <th>Program Type</th>
+          <th>Stage Type</th>
+          <th>Gender Category</th>
+          <th>Select your preference</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for program in programs %}
+          <tr>
+            <td>
+              <label for="{{ program.program_name }}">{{ program.program_name }}</label>
+            </td>
+            <td>{{ program.program_type }}</td>
+            <td>{{ program.Stage_choices }}</td>
+            <td>{{ program.Gender_choices }}</td>
+            <td>
+              {% if program in userdetails.program.all %}
+                <input class="form-check-input" type="checkbox" value="{{ program.program_name }}" name="selected_programs" checked>
+              {% else %}
+                <input class="form-check-input" type="checkbox" value="{{ program.program_name }}" name="selected_programs">
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="text-center">
+  <button type="submit" class="btn btn-primary mt-8" style="width:80%;">Submit Your Choices</button>
+  </div>
+{% comment %} </form>
+<script src="{% static 'assets/js/select-categories.js' %}"></script> {% endcomment %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    let soloCount = 0;
+    let groupCount = 0;
+
+    checkboxes.forEach(function (checkbox) {
+        const programType = checkbox.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.textContent.trim();
+
+        // Initialize counts based on pre-checked checkboxes
+        if (checkbox.checked) {
+            if (programType === 'individual' && soloCount < 4) {
+                soloCount++;
+            } else if (programType === 'Group' && groupCount < 2) {
+                groupCount++;
+            }
+        }
+    });
+
+    console.log('Initial soloCount:', soloCount);
+    console.log('Initial groupCount:', groupCount);
+
+    checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', function () {
+            const programType = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.textContent.trim();
+
+            // Display toast for each selection
+            if (this.checked) {
+                if (programType === 'individual' && soloCount < 4) {
+                    soloCount++;
+                } else if (programType === 'Group' && groupCount < 2) {
+                    groupCount++;
+                } else {
+                    this.checked = false; // Prevent checking more than the allowed limit
+                    showToast('A student can only participate in up to 4 solo items and 2 group items');
+                }
+            } else {
+                if (programType === 'individual') {
+                    soloCount--;
+                } else if (programType === 'Group') {
+                    groupCount--;
+                }
+            }
+
+            console.log('Current soloCount:', soloCount);
+            console.log('Current groupCount:', groupCount);
+        });
+    });
+
+    function showToast(message) {
+        const toastContainer = document.getElementById('toast-container');
+        const toastBody = toastContainer.querySelector('.toast-body');
+        toastBody.textContent = message;
+
+        const toast = new bootstrap.Toast(toastContainer.querySelector('.toast'));
+
+        // Handle close button click manually
+        const closeButton = toastContainer.querySelector('.close');
+        closeButton.addEventListener('click', function () {
+            toast.hide();
+        });
+
+        toast.show();
+    }
+});
+</script>
+{% endblock %}

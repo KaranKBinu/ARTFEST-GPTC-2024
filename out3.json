@@ -1,0 +1,2202 @@
+[
+  {
+    "student_name": "ABHIJITH A ",
+    "Gender": "Male",
+    "admn_no": 7002,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIRAM M",
+    "Gender": "Male",
+    "admn_no": 6558,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHISHEK M",
+    "Gender": "Male",
+    "admn_no": 6557,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHISHEK M G",
+    "Gender": "Male",
+    "admn_no": 6801,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHISHEK S",
+    "Gender": "Male",
+    "admn_no": 6971,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABINAV N S",
+    "Gender": "Male",
+    "admn_no": 6930,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADARSH P S",
+    "Gender": "Male",
+    "admn_no": 7244,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYAN B",
+    "Gender": "Male",
+    "admn_no": 7020,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJMAL N",
+    "Gender": "Male",
+    "admn_no": 6967,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAY ANIL",
+    "Gender": "Male",
+    "admn_no": 6661,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAY M BIJU",
+    "Gender": "Male",
+    "admn_no": 7400,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHITH S",
+    "Gender": "Male",
+    "admn_no": 6562,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALVIN ANTHRAPER",
+    "Gender": "Male",
+    "admn_no": 6577,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMAL NASAR",
+    "Gender": "Male",
+    "admn_no": 7237,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMAL SREEDHAR",
+    "Gender": "Male",
+    "admn_no": 6939,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANAND .S",
+    "Gender": "Male",
+    "admn_no": 6851,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDHA KRISHNAN S",
+    "Gender": "Male",
+    "admn_no": 6959,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDHU  V",
+    "Gender": "Male",
+    "admn_no": 6962,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDHURAJ B",
+    "Gender": "Male",
+    "admn_no": 6506,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANU SATHYAN ",
+    "Gender": "Male",
+    "admn_no": 6934,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANURAG MOHAN",
+    "Gender": "Male",
+    "admn_no": 6495,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANURAG THULASI",
+    "Gender": "Male",
+    "admn_no": 6965,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARJUN K PRAKASH",
+    "Gender": "Male",
+    "admn_no": 6538,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AROMAL K R",
+    "Gender": "Male",
+    "admn_no": 6850,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARUN SIVAN",
+    "Gender": "Male",
+    "admn_no": 6849,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWIN D R",
+    "Gender": "Male",
+    "admn_no": 6997,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHUL BASTIAN",
+    "Gender": "Male",
+    "admn_no": 6949,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "B ARJUN",
+    "Gender": "Male",
+    "admn_no": 6609,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "BESALEL A A ",
+    "Gender": "Male",
+    "admn_no": 6999,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DEEPU.S",
+    "Gender": "Male",
+    "admn_no": 6814,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "GOUTHAM MG ",
+    "Gender": "Male",
+    "admn_no": 7003,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "GOVIND V",
+    "Gender": "Male",
+    "admn_no": 6857,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "HARIGOVIND K NAIR",
+    "Gender": "Male",
+    "admn_no": 6523,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "HARIKRISHNAN U",
+    "Gender": "Male",
+    "admn_no": 6954,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JAYASOORYA VS",
+    "Gender": "Male",
+    "admn_no": 6960,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JISHNU DAS P D",
+    "Gender": "Male",
+    "admn_no": 6590,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JITHIN MANOJ",
+    "Gender": "Male",
+    "admn_no": 6579,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANUKRISHNA M",
+    "Gender": "Male",
+    "admn_no": 6769,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANUVAL MELVIN",
+    "Gender": "Male",
+    "admn_no": 6828,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHAMED WAZEEM. R.",
+    "Gender": "Male",
+    "admn_no": 6617,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHAMMED JAZEEM P. J",
+    "Gender": "Male",
+    "admn_no": 6604,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "NOBLE THOMAS",
+    "Gender": "Male",
+    "admn_no": 6977,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ROOPESH C R",
+    "Gender": "Male",
+    "admn_no": 6521,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SADAKATHULLA K A",
+    "Gender": "Male",
+    "admn_no": 6860,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SALAHUDHEEN AYOOBI N",
+    "Gender": "Male",
+    "admn_no": 6909,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SHIBIN ANTONY",
+    "Gender": "Male",
+    "admn_no": 6935,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SOORAJ S",
+    "Gender": "Male",
+    "admn_no": 6924,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SOORAJKRISHNAN. K",
+    "Gender": "Male",
+    "admn_no": 6528,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SREEJITH KR",
+    "Gender": "Male",
+    "admn_no": 6881,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SURYANARAYANAN P R",
+    "Gender": "Male",
+    "admn_no": 6549,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VASANTH JIBU",
+    "Gender": "Male",
+    "admn_no": 6754,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VINAYAK B",
+    "Gender": "Male",
+    "admn_no": 6618,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VIPIN P S",
+    "Gender": "Male",
+    "admn_no": 6539,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VISHNU A ",
+    "Gender": "Male",
+    "admn_no": 6986,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "YASEEN HAMEED H",
+    "Gender": "Male",
+    "admn_no": 6966,
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIJITHKRISHNA R",
+    "Gender": "Male",
+    "admn_no": "Nill",
+    "branch": "ME",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIJITH LAL M",
+    "Gender": "Male",
+    "admn_no": 6872,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIJITH S",
+    "Gender": "Male",
+    "admn_no": 6929,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AISWARYA SUBRAMANYAN ",
+    "Gender": "Male",
+    "admn_no": 6888,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJAI J",
+    "Gender": "Male",
+    "admn_no": 6510,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKASH B",
+    "Gender": "Male",
+    "admn_no": 6615,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKASH. A",
+    "Gender": "Male",
+    "admn_no": 6859,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKASH. S",
+    "Gender": "Male",
+    "admn_no": 6894,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHIL . B",
+    "Gender": "Male",
+    "admn_no": 6631,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHIL SURESH",
+    "Gender": "Male",
+    "admn_no": 6838,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHIL.V",
+    "Gender": "Male",
+    "admn_no": 6988,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAY CHANDRAN",
+    "Gender": "Male",
+    "admn_no": 6942,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAY P K",
+    "Gender": "Male",
+    "admn_no": 6517,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMAL DAS M",
+    "Gender": "Male",
+    "admn_no": 6896,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMAL S P",
+    "Gender": "Male",
+    "admn_no": 6522,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMBADI K R",
+    "Gender": "Male",
+    "admn_no": 6854,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANAND A",
+    "Gender": "Male",
+    "admn_no": 6489,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANAND KRISHNAN",
+    "Gender": "Male",
+    "admn_no": 6534,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANTHAKRISHNAN P V",
+    "Gender": "Male",
+    "admn_no": 6507,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANTHU S NAIR",
+    "Gender": "Male",
+    "admn_no": 6552,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANJANA SHIBU  ",
+    "Gender": "Male",
+    "admn_no": 6600,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANJOSE JERSON",
+    "Gender": "Male",
+    "admn_no": 6931,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANU MURALI",
+    "Gender": "Male",
+    "admn_no": 6823,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANUPA GOPINATH       ",
+    "Gender": "Male",
+    "admn_no": 6943,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARJUN KRISHNA S M",
+    "Gender": "Male",
+    "admn_no": 6972,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARUN S",
+    "Gender": "Male",
+    "admn_no": 6601,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWATHI S        ",
+    "Gender": "Male",
+    "admn_no": 6611,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHULLAL KRISHNA",
+    "Gender": "Male",
+    "admn_no": 6772,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DARSANARAJ . D",
+    "Gender": "Male",
+    "admn_no": 6756,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "FAZEELA.N     ",
+    "Gender": "Male",
+    "admn_no": 6546,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JAIMON VARGHESE",
+    "Gender": "Male",
+    "admn_no": 6554,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JANAKIDEVI B             ",
+    "Gender": "Male",
+    "admn_no": 6774,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JYOTHISH KRISHNA.S",
+    "Gender": "Male",
+    "admn_no": 7401,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KARTHIK MURALI",
+    "Gender": "Male",
+    "admn_no": 6646,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KARTHIK S BIJU",
+    "Gender": "Male",
+    "admn_no": 6771,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KIRAN V R",
+    "Gender": "Male",
+    "admn_no": 6885,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KISHAN DAS",
+    "Gender": "Male",
+    "admn_no": 6612,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "LITTOOS L",
+    "Gender": "Male",
+    "admn_no": 6927,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANIKANDAN",
+    "Gender": "Male",
+    "admn_no": 7240,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHAMMAD YASIR M",
+    "Gender": "Male",
+    "admn_no": 6487,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHAMMED AAQIL P. M.",
+    "Gender": "Male",
+    "admn_no": 6784,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHAMMED BILAL K S",
+    "Gender": "Male",
+    "admn_no": 6622,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHAMMED SULFI . C . Y",
+    "Gender": "Male",
+    "admn_no": 6920,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MOHITH S",
+    "Gender": "Male",
+    "admn_no": 6624,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "NANDU. S",
+    "Gender": "Male",
+    "admn_no": 6829,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "POOJA P        ",
+    "Gender": "Male",
+    "admn_no": 6926,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "PRADHAM S SUKU",
+    "Gender": "Male",
+    "admn_no": 6531,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "PRANAV P",
+    "Gender": "Male",
+    "admn_no": 6545,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "PRUTHVIRAJ . C . P",
+    "Gender": "Male",
+    "admn_no": 6873,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "RAJEEV R",
+    "Gender": "Male",
+    "admn_no": 6602,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "RAKESH KRISHNAN.R",
+    "Gender": "Male",
+    "admn_no": 6683,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "RINSHA NAVAS    ",
+    "Gender": "Male",
+    "admn_no": 6807,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SAHLA S       ",
+    "Gender": "Male",
+    "admn_no": 6797,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SANJAY J",
+    "Gender": "Male",
+    "admn_no": 6644,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SIVARETNAKUMAR S",
+    "Gender": "Male",
+    "admn_no": 6537,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SOOYES S.       ",
+    "Gender": "Male",
+    "admn_no": 6496,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "YADHUKRISNAN S",
+    "Gender": "Male",
+    "admn_no": 6481,
+    "branch": "CT",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIJITH A",
+    "Gender": "Male",
+    "admn_no": 6832,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIJITH J",
+    "Gender": "Male",
+    "admn_no": 6869,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIJITH S",
+    "Gender": "Male",
+    "admn_no": 6763,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIMANUE V",
+    "Gender": "Male",
+    "admn_no": 6870,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHISHEK N A",
+    "Gender": "Male",
+    "admn_no": 6867,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHISHEK P D",
+    "Gender": "Male",
+    "admn_no": 6491,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYAN VINAYAN",
+    "Gender": "Male",
+    "admn_no": 6910,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYASANKAR M",
+    "Gender": "Male",
+    "admn_no": 6630,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJESH R",
+    "Gender": "Male",
+    "admn_no": 6846,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKASH.P",
+    "Gender": "Male",
+    "admn_no": 7402,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALAN OUSEPH",
+    "Gender": "Male",
+    "admn_no": 7239,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALANKUMAR C P",
+    "Gender": "Male",
+    "admn_no": 6564,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALWIN JOLLY",
+    "Gender": "Male",
+    "admn_no": 6871,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMAL RAJ",
+    "Gender": "Male",
+    "admn_no": 6509,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANAND S",
+    "Gender": "Male",
+    "admn_no": 6874,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDAKRISHNAN C D",
+    "Gender": "Male",
+    "admn_no": 6480,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDHAKRISHNAN P T",
+    "Gender": "Male",
+    "admn_no": 6544,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDHURAJ C",
+    "Gender": "Male",
+    "admn_no": 6911,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANAS MUHAMMED .S",
+    "Gender": "Male",
+    "admn_no": 6800,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANURAG.K.A",
+    "Gender": "Male",
+    "admn_no": 6933,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "APARNA U",
+    "Gender": "Male",
+    "admn_no": 6790,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARAVIND B",
+    "Gender": "Male",
+    "admn_no": 6623,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARAVIND C R",
+    "Gender": "Male",
+    "admn_no": 6527,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARIF MUAMMED",
+    "Gender": "Male",
+    "admn_no": 7010,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARJUN VINOD",
+    "Gender": "Male",
+    "admn_no": 7004,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARUN C",
+    "Gender": "Male",
+    "admn_no": 6565,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASHIN K S",
+    "Gender": "Male",
+    "admn_no": 6662,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASHWIN K VENU",
+    "Gender": "Male",
+    "admn_no": 6940,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHUL CHITHRAN",
+    "Gender": "Male",
+    "admn_no": 6536,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHUL KRISHAN .O",
+    "Gender": "Male",
+    "admn_no": 6976,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHUL KRISHNAN.K.K",
+    "Gender": "Male",
+    "admn_no": 7236,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHULKRISHNAN K U",
+    "Gender": "Male",
+    "admn_no": 6564,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "BHARATH DEVANARAYANAN A",
+    "Gender": "Male",
+    "admn_no": 6526,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "CHANCHALA .V .D",
+    "Gender": "Male",
+    "admn_no": 6484,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "CHATHURVED T V",
+    "Gender": "Male",
+    "admn_no": 6994,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DEVANARAYANAN S",
+    "Gender": "Male",
+    "admn_no": 6877,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "HARISHANKAR .H",
+    "Gender": "Male",
+    "admn_no": 6979,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JOEL JOSEPH",
+    "Gender": "Male",
+    "admn_no": 6551,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KEYIN JOSEPH ",
+    "Gender": "Male",
+    "admn_no": 6980,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KISHORE KUMAR.D",
+    "Gender": "Male",
+    "admn_no": 7238,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANEESH.M",
+    "Gender": "Male",
+    "admn_no": 7403,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANU M",
+    "Gender": "Male",
+    "admn_no": 6836,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MIDHUNRAJ R",
+    "Gender": "Male",
+    "admn_no": 6975,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MUHAMMED FAISAL",
+    "Gender": "Male",
+    "admn_no": 6964,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "NASRIN NASAR",
+    "Gender": "Male",
+    "admn_no": 6968,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "NAVANEETH P",
+    "Gender": "Male",
+    "admn_no": 6666,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "RENJU R",
+    "Gender": "Male",
+    "admn_no": 7016,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "RITHIN ANTONY ",
+    "Gender": "Male",
+    "admn_no": 6937,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ROHITH RAJ ",
+    "Gender": "Male",
+    "admn_no": 6958,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SANJAY K S",
+    "Gender": "Male",
+    "admn_no": 6852,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SEBASTIAN PAUL",
+    "Gender": "Male",
+    "admn_no": 6623,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SHARON A B",
+    "Gender": "Male",
+    "admn_no": 6922,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SIDHARTH SADASIVAN",
+    "Gender": "Male",
+    "admn_no": 6589,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SREEKUMAR S",
+    "Gender": "Male",
+    "admn_no": 6908,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SREYAS S",
+    "Gender": "Male",
+    "admn_no": 7000,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SUHAIL SHAJI",
+    "Gender": "Male",
+    "admn_no": 6862,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VISHNU UNNITHAN ",
+    "Gender": "Male",
+    "admn_no": 6973,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VISHNUDEV T R",
+    "Gender": "Male",
+    "admn_no": 6842,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VIVEK K S",
+    "Gender": "Male",
+    "admn_no": 6493,
+    "branch": "EC",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIRAMI BOSE",
+    "Gender": "Male",
+    "admn_no": 6963,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADARSH .R",
+    "Gender": "Male",
+    "admn_no": 6899,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADHISIVA S",
+    "Gender": "Male",
+    "admn_no": 6912,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYA DEV",
+    "Gender": "Male",
+    "admn_no": 6946,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYAN A P",
+    "Gender": "Male",
+    "admn_no": 6996,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AISWARYA T H",
+    "Gender": "Male",
+    "admn_no": 6606,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJAS MON. H",
+    "Gender": "Male",
+    "admn_no": 6816,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJAY K MON",
+    "Gender": "Male",
+    "admn_no": 6669,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAY UDAYAN",
+    "Gender": "Male",
+    "admn_no": 6970,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAR GITA NAND",
+    "Gender": "Male",
+    "admn_no": 6616,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALWIN JAMES",
+    "Gender": "Male",
+    "admn_no": 6795,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMALDEV V",
+    "Gender": "Male",
+    "admn_no": 6813,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARCHANA UDAYAPPAN",
+    "Gender": "Male",
+    "admn_no": 6835,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARUNKUMAR S",
+    "Gender": "Male",
+    "admn_no": 7015,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWATHY BABU",
+    "Gender": "Male",
+    "admn_no": 6978,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWIN S",
+    "Gender": "Male",
+    "admn_no": 6785,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "BIDHUL BINOY",
+    "Gender": "Male",
+    "admn_no": 6900,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "FATHIMA SHAJUDHEEN",
+    "Gender": "Male",
+    "admn_no": 7005,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JAYASANKAR P S",
+    "Gender": "Male",
+    "admn_no": 6786,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JENEEV VINCENT",
+    "Gender": "Male",
+    "admn_no": 6990,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KARAN K BINU",
+    "Gender": "Male",
+    "admn_no": 6532,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KIRAN KRISHNA",
+    "Gender": "Male",
+    "admn_no": 6884,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KIRAN V",
+    "Gender": "Male",
+    "admn_no": 6883,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KRISHNAPRASAD P P",
+    "Gender": "Male",
+    "admn_no": 6901,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANU M PILLAI",
+    "Gender": "Male",
+    "admn_no": 6508,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MIDHUN R",
+    "Gender": "Male",
+    "admn_no": 6951,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SAM GEORGE M J",
+    "Gender": "Male",
+    "admn_no": 6974,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SANJU GIREESH",
+    "Gender": "Male",
+    "admn_no": 6787,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SIVAKIRAN MG",
+    "Gender": "Male",
+    "admn_no": 6887,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SNEHAMOL J",
+    "Gender": "Male",
+    "admn_no": 6780,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SRAVAN S",
+    "Gender": "Male",
+    "admn_no": 6917,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SREEKUMAR.R.",
+    "Gender": "Male",
+    "admn_no": 6799,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SREELESH V.P",
+    "Gender": "Male",
+    "admn_no": 6804,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SREERAG. S",
+    "Gender": "Male",
+    "admn_no": 6494,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SYAMLAL",
+    "Gender": "Male",
+    "admn_no": 6570,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "UNNIKRISHNAN. R",
+    "Gender": "Male",
+    "admn_no": 6805,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "UNNIKRISHNAN.V",
+    "Gender": "Male",
+    "admn_no": 6944,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VARUN V",
+    "Gender": "Male",
+    "admn_no": 6998,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VIDUL KRISHNA",
+    "Gender": "Male",
+    "admn_no": 6626,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "VISWAS Y",
+    "Gender": "Male",
+    "admn_no": 7021,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "YADUKRISHNA.K.S",
+    "Gender": "Male",
+    "admn_no": 6840,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "PRANAV V ANIL",
+    "Gender": "Male",
+    "admn_no": 6385,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MUNEER MUBASH",
+    "Gender": "Male",
+    "admn_no": 6749,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMAL KRISHNA N M",
+    "Gender": "Male",
+    "admn_no": 6470,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWIN K B",
+    "Gender": "Male",
+    "admn_no": 6174,
+    "branch": "CHE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABDUL GAFOOR .S",
+    "Gender": "Male",
+    "admn_no": 6914,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIRAJ P V",
+    "Gender": "Male",
+    "admn_no": 7404,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIRAM .C",
+    "Gender": "Male",
+    "admn_no": 6512,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ABHIRAMI SHIBU",
+    "Gender": "Male",
+    "admn_no": 6656,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADARSH. S",
+    "Gender": "Male",
+    "admn_no": 6587,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADHIL ANZAR",
+    "Gender": "Male",
+    "admn_no": 7405,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYAKIRAN A.",
+    "Gender": "Male",
+    "admn_no": 6667,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ADITHYEN S",
+    "Gender": "Male",
+    "admn_no": 7019,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AGRAH K S",
+    "Gender": "Male",
+    "admn_no": 6660,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJAY KRISHNAN.R",
+    "Gender": "Male",
+    "admn_no": 6540,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJAY SATHEESAN",
+    "Gender": "Male",
+    "admn_no": 6778,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AJENDRAN.M",
+    "Gender": "Male",
+    "admn_no": 6993,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHIL A",
+    "Gender": "Male",
+    "admn_no": 6991,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHIL DERSH A S",
+    "Gender": "Male",
+    "admn_no": 6878,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHIL.S",
+    "Gender": "Male",
+    "admn_no": 7023,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHILESH.C.B",
+    "Gender": "Male",
+    "admn_no": 6779,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKHILKRISHNA",
+    "Gender": "Male",
+    "admn_no": 6821,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AKSHAY S",
+    "Gender": "Male",
+    "admn_no": 6511,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALAN JOSEPH",
+    "Gender": "Male",
+    "admn_no": 6633,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ALEX K F",
+    "Gender": "Male",
+    "admn_no": 6806,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMALJITH B",
+    "Gender": "Male",
+    "admn_no": 6748,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AMALKRISHNA K S",
+    "Gender": "Male",
+    "admn_no": 6675,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ANANDHU P P",
+    "Gender": "Male",
+    "admn_no": 6841,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARADHYA ARAVINDHAKSHAN",
+    "Gender": "Male",
+    "admn_no": 6995,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARJUN KRISHNA G",
+    "Gender": "Male",
+    "admn_no": 7001,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARJUN OMANAKUTTAN",
+    "Gender": "Male",
+    "admn_no": 6811,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ARJUN.D",
+    "Gender": "Male",
+    "admn_no": 6591,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AROMAL K A",
+    "Gender": "Male",
+    "admn_no": 6843,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASHISH R",
+    "Gender": "Male",
+    "admn_no": 6490,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASHISH RAJ",
+    "Gender": "Male",
+    "admn_no": 6913,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASHISH.A",
+    "Gender": "Male",
+    "admn_no": 7006,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWAN.U",
+    "Gender": "Male",
+    "admn_no": 7009,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ASWIN ASHOK",
+    "Gender": "Male",
+    "admn_no": 6596,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHAN GEORGE",
+    "Gender": "Male",
+    "admn_no": 7024,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "ATHUL KRISHNA.N.S.",
+    "Gender": "Male",
+    "admn_no": 6895,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "AYUSH P. KUMAR",
+    "Gender": "Male",
+    "admn_no": 6582,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DEEPAK DINESAN K",
+    "Gender": "Male",
+    "admn_no": 6574,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DEVADETHAN P",
+    "Gender": "Male",
+    "admn_no": 6981,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DEVANAND.S",
+    "Gender": "Male",
+    "admn_no": 7013,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DEVANARAYAN KRIPAKAR.A",
+    "Gender": "Male",
+    "admn_no": 6969,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DILSHAD MON HAREES",
+    "Gender": "Male",
+    "admn_no": 6686,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "DON SAMSON NS ",
+    "Gender": "Male",
+    "admn_no": 6923,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "HARINATH RAJU . S",
+    "Gender": "Male",
+    "admn_no": 6569,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JAISON JOSE",
+    "Gender": "Male",
+    "admn_no": 7008,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JINU J",
+    "Gender": "Male",
+    "admn_no": 6599,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "JITHINDAS H",
+    "Gender": "Male",
+    "admn_no": 6550,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KANNAN .T.R",
+    "Gender": "Male",
+    "admn_no": 7011,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KANNAN. S",
+    "Gender": "Male",
+    "admn_no": 6542,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "KARTHIK A J",
+    "Gender": "Male",
+    "admn_no": 6793,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "LAL RAJ",
+    "Gender": "Male",
+    "admn_no": 6571,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MANU UTHAMAN",
+    "Gender": "Male",
+    "admn_no": 6882,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "MUHAMMED THASLEEM. N",
+    "Gender": "Male",
+    "admn_no": 6677,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "PRANAV.P",
+    "Gender": "Male",
+    "admn_no": 7007,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SAMBHU.S",
+    "Gender": "Male",
+    "admn_no": 6597,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SHIJAS.N",
+    "Gender": "Male",
+    "admn_no": 6520,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SITIN DAS.A",
+    "Gender": "Male",
+    "admn_no": 7014,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SIVAPRASAD.V.A",
+    "Gender": "Male",
+    "admn_no": 6861,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SUJIDEV S",
+    "Gender": "Male",
+    "admn_no": 6670,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  },
+  {
+    "student_name": "SUJITH . P . A",
+    "Gender": "Male",
+    "admn_no": 6782,
+    "branch": "IE",
+    "sem": "S6",
+    "house": "House 1"
+  }
+]

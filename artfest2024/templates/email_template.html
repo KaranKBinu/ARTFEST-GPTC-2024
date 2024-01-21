@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007BFF;
+            text-align:center;
+        }
+        .program {
+            margin-bottom: 10px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Greetings from Arts Fest 2024 program committee!</h1>
+        <p>You have selected for the following programs:</p><ol>
+        {% for program_detail in selected_program_details %}
+            <div class="program">
+                
+                <li>
+                <p>{{ program_detail.program_name }} [ Chess No: {{ program_detail.chess_no }} ]</p>
+                </li>
+            </div>
+        {% endfor %}
+        </ol>
+     </div>
+     <p class="text-center">Password for User : {{ userdetails.student_admn_no }} is:<b> {{ userdetails.student_password }}</b></p>
+</body>
+</html>

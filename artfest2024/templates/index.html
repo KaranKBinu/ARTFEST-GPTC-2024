@@ -1,0 +1,289 @@
+{% extends "main.html" %} {% load static %} {% block content %}
+
+<!-- ***** Main Banner Area Start ***** -->
+<div
+  class="main-banner"
+  style="background-image: url('../static/assets/images1/banner-bg1.jpg')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="header-text">
+          <h2>Welcome to <em>Arts Fest</em> 2024.</h2>
+          <p>
+            "GPTC Cherthala Wecomes you to the Fabulous Arts Fest, where
+            creativity comes to life!. Immerse yourself in a vibrant celebration
+            of artistic expression, showcasing talent from various genres. Join
+            us on a journey of inspiration, innovation, and the boundless beauty
+            of the artistic spirit."
+          </p>
+          <div class="buttons">
+            <div class="icon-button">
+              <a href="https://youtube.com/templatemo" target="_blank"
+                ><i class="fa fa-play"></i> Watch Our Video Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ***** Main Banner Area End ***** -->
+
+<section class="featured-items" id="featured-items">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="owl-features owl-carousel"
+          style="position: relative; z-index: 5"
+        >
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/kathakali.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/mohiniyattam.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/theyyam.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/pulikalli.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/theyyamda.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/mohiniyattam.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/theyyam.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img
+                src="{% static 'assets/images1/pulikalli.jpg' %}"
+                alt="images1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-categories">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <h4>Check Out Our <em>Competition Categories..</em></h4>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="main-button">
+          <a href="{% url 'categories' %}">Discover All Categories</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img2.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img1.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img3.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img7.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img8.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img6.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img4.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img5.jpg' %}" alt="images1" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="thumb">
+          <img src="{% static 'assets/images1/img9.jpg' %}" />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="main-button">
+          <a href="#">Load More Photos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading text-center">
+          <h4>For Queries <em>Contact Us</em>.</h4>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="info-item">
+          <i class="fa fa-phone"></i>
+          <h4>Phone Numbers</h4>
+          <span>0478-2813427<br />0478-2813427</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="info-item">
+          <i class="fa fa-envelope"></i>
+          <h4>Email Addresses</h4>
+          <span>info@company.com<br />hello@company.com</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="info-item">
+          <i class="fa fa-map-marked"></i>
+          <h4>Location</h4>
+          <span
+            >GPTC Cherthala, Maruthorvattom P.O,<br />
+            Alappuzha, Kerala - 688539</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <form id="contact" action="{% url 'contact_form' %}" method="post">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-lg-6">
+            <fieldset>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name..."
+                autocomplete="on"
+                required
+              />
+            </fieldset>
+          </div>
+          <div class="col-lg-6">
+            <fieldset>
+              <input
+                type="text"
+                name="telephone"
+                id="telephone"
+                placeholder="Your Telephone..."
+                autocomplete="on"
+                required
+              />
+            </fieldset>
+          </div>
+          <div class="col-lg-6">
+            <fieldset>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your E-mail..."
+                required=""
+              />
+            </fieldset>
+          </div>
+          <div class="col-lg-6">
+            <fieldset>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject..."
+                autocomplete="on"
+              />
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <fieldset>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <fieldset>
+              <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

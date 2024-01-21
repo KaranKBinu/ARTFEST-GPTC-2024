@@ -1,0 +1,541 @@
+{% extends "main.html" %} {% load static %} {% block content %}
+
+<!-- Search Bar -->
+<!-- <div class="search-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                    <label for="contest" class="form-label">Search Any Contest</label>
+                    <input type="text" name="contest" class="searchText" placeholder="Contest Name..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                    <label for="category" class="form-label">Pick Category</label>
+                    <select name="category" class="form-select" aria-label="Choose a category" id="category" onchange="this.form.click()">
+                        <option selected>Choose a category</option>
+                        <option type="checkbox" name="Nature" value="Nature">Nature Photography (220 Contests)</option>
+                        <option value="Portrait">Portrait Photography (172 Contests)</option>
+                        <option value="Space">Space Photography (92 Contests)</option>
+                    </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-2">                        
+                <fieldset>
+                    <button class="main-button">Search Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<div class="page-heading" style="background-image: url('../static/assets/images1/img4.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 header-text "style='background-color:rgba(255, 255, 255, 0.8);box-shadow:10px 10px 10px rgba(0, 0, 0, 0.4);border-radius:50px;'>
+        <h2 class="space-need" style="color:#00bdfe;">Hurry Up Guys..!<br></h2>
+        <h6 style="color:#00bdfe;">Registration Deadline</h6>
+        <div class="main-content">
+          <div class="counter">
+            <div class="days">
+              <div class="value"style="color:#00bdfe;">00</div>
+              <span style="color:#00bdfe;">Days</span>
+            </div>
+            <div class="hours">
+              <div class="value"style="color:#00bdfe;">00</div>
+              <span style="color:#00bdfe;">Hours</span>
+            </div>
+            <div class="minutes">
+              <div class="value"style="color:#00bdfe;">00</div>
+              <span style="color:#00bdfe;">Minutes</span>
+            </div>
+            <div class="seconds">
+              <div class="value"style="color:#00bdfe;">00</div>
+              <span style="color:#00bdfe;">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="top-categories">
+  <section class="popular-categories">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h4><em>Offstage</em> &nbsp;Competitions.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      {% comment %} {% for category in categories %}
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <div class="icon">
+            <img src="{% static 'assets/images1/icon-01.png' %}" alt="" />
+          </div>
+          <h4>{{ category.program_name }}</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      {% endfor %} {% endcomment %}
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ചിത്രരചന പെൻസിൽ</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ചിത്രരചന ജലച്ചായം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ചിത്രരചന എണ്ണച്ചായം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കാർട്ടൂൺ</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ഉപന്യാസം മലയാളം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ഉപന്യാസം ഇംഗ്ലീഷ്</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കഥാരചന മലയാളം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കഥാരചന ഇംഗ്ലീഷ്</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കവിതാരചന മലയാളം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കവിതാരചന ഇംഗ്ലീഷ്</h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+
+<div class="top-categories">
+  <section class="popular-categories">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <!-- <h6>Our Categories</h6> -->
+            <h4>
+              <em>Onstage</em> &nbsp;Competitions&nbsp;<em>Group Items</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>മാർഗ്ഗം കളി</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ഒപ്പന </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>വട്ടപ്പാട്ട് </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>സംഘഗാനം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ഗാനമേള </h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>നാടകം മലയാളം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ചെണ്ടമേളം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>പഞ്ചവാദ്യം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>വൃന്ദവാദ്യം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>നാടൻപാട്ട് </h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>പരിചമുട്ടുകളി</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കോൽക്കളി</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ദഫ്‌മുട്ട്</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>പൂരക്കളി </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ദേശഭക്തിഗാനം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </div>
+</div>
+
+<div class="top-categories">
+  <section class="popular-categories">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <!-- <h6>Our Categories</h6> -->
+            <h4>
+              <em>Onstage</em> &nbsp;Competitions&nbsp;<em>Individual Items</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>മാർഗ്ഗം കളി</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ഒപ്പന </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>വട്ടപ്പാട്ട് </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>സംഘഗാനം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ഗാനമേള </h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>നാടകം മലയാളം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ചെണ്ടമേളം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>പഞ്ചവാദ്യം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>വൃന്ദവാദ്യം</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>നാടൻപാട്ട് </h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>പരിചമുട്ടുകളി</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>കോൽക്കളി</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ദഫ്‌മുട്ട്</h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>പൂരക്കളി </h4>
+          <span></span>
+        
+        </div>
+      </div>
+      <div class="col-lg col-sm-4">
+        <div class="item">
+          <h4>ദേശഭക്തിഗാനം </h4>
+          <span></span>
+        
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+
+<!-- Testimonials
+<section class="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="owl-testimonials owl-carousel">
+          <div class="item">
+            <div class="content">
+              <div class="left-content">
+                <p>
+                  “SnapX Photography is a professional website template for
+                  photo and video related businesses. This Bootstrap v5.1.3 HTML
+                  CSS template is provided by TemplateMo website.”
+                </p>
+                <h4>Thomas Wilson</h4>
+                <span>User #007704</span>
+              </div>
+              <div class="image">
+                <img src="{% static 'assets/images1/author.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="left-content">
+                <p>
+                  “You may visit Too CSS website for latest collections of great
+                  templates. There are a variety of different categories for
+                  HTML CSS templates.”
+                </p>
+                <h4>John Walker</h4>
+                <span>User #007772</span>
+              </div>
+              <div class="image">
+                <img src="{% static 'assets/images1/author.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="left-content">
+                <p>
+                  “If you need a working contact form, please visit TemplateMo
+                  contact page for more information. You can easily buy and use
+                  a simple PHP contact form.”
+                </p>
+                <h4>Vincent Anthon</h4>
+                <span>User #007794</span>
+              </div>
+              <div class="image">
+                <img src="{% static 'assets/images1/author.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="left-content">
+                <p>
+                  “When you need Free CSS Templates, you just remember our
+                  website TemplateMo. We provide you best quality website
+                  templates at absolutely free of charge. No hidden cost
+                  involved.”
+                </p>
+                <h4>Alan Smithee</h4>
+                <span>User #007765</span>
+              </div>
+              <div class="image">
+                <img src="{% static 'assets/images1/author.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="left-content">
+                <p>
+                  “We hope this template is very useful for your website
+                  development. If you wish to
+                  <a
+                    rel="nofollow"
+                    href="https://templatemo.com/contact"
+                    target="_blank"
+                    >support TemplateMo</a
+                  >, you may make a small amount of donation via PayPal.”
+                </p>
+                <h4>Alan Smithee</h4>
+                <span>User #007724</span>
+              </div>
+              <div class="image">
+                <img src="{% static 'assets/images1/author.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+{% endblock content %}

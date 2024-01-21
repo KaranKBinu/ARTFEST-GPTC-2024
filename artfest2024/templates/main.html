@@ -1,0 +1,389 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="templatemo" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap' %}"
+      rel="stylesheet"
+    />
+
+    <title>Arts Fest 2024</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Additional CSS Files -->
+  <link rel="icon" href="{% static 'assets/images1/favicon-2.png' %}" />
+
+
+    <link rel="stylesheet" href="{% static 'assets/css1/fontawesome.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css1/templatemo-snapx-photography.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'assets/css1/owl.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css1/animate.css' %}" />
+ 
+    <link
+      rel="stylesheet"
+      href="{% static 'https://unpkg.com/swiper@7/swiper-bundle.min.css' %}"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
+
+    <style>
+      .msg{
+        margin:100px 100px 10px 100px;
+      }
+    </style>
+    <!--
+
+TemplateMo 576 SnapX Photography
+
+https://templatemo.com/tm-576-snapx-photography
+
+-->
+    <style>
+      .error {
+        color: red;
+      }
+
+      .user_register {
+        overflow-y: auto;
+        max-height: 500px;
+        margin-bottom: 10px;
+      }
+      
+      .logo-img{
+        width:25%;
+        height:65%;
+        margin-bottom:4px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- ** Header Area Start ** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ** Logo Start ** -->
+              <a href="{% url 'index' %}" class="logo">
+                <img src="{% static 'assets/images1/favicon.png' %}" alt="Logo" class="logo-img"/>
+              </a>
+              <!-- ** Logo End ** -->
+              <!-- ** Menu Start ** -->
+              <ul class="nav">
+                <li><a href="{% url  'index' %}" class="active">Home</a></li>
+                <li><a href="{% static 'files/ARTS_2024_MANUAL.pdf' %}" download>Rules</a></li>
+                <li><a href="{% url  'categories' %}">Categories</a></li>
+                <li><a href="#">Result</a></li>
+              </ul>
+              {% if user.is_authenticated %}
+              <div class="dropdown border-button">
+                <a id="user-icon" href="#" class="sign-in-up" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user"></i> {{ request.user.username }}
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="{% url 'select_categories' %}">Profile</a>
+                  <a class="dropdown-item" href="#" id="forgotPasswordLink">Forgot Password</a>
+
+                  <a class="dropdown-item" href="{% url 'user_logout' %}">Logout</a>
+                </div>
+              </div>
+              
+                {% else %}
+                  <div class="border-button">
+                    <a id="modal_trigger" href="#modal" class="sign-in-up">
+                      <i class="fa fa-user"></i> Sign In/Register
+                    </a>
+                  </div>
+              {% endif %}
+
+            
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ** Menu End ** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ** Header Area End ** -->
+    <div class='msg text-center'>
+      {% if messages %}
+          {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} {% if message.tags == 'error' %}alert-danger{% endif %}">
+                  {{ message }}
+              </div>
+          {% endfor %}
+      {% endif %}
+  </div>
+
+  
+  <!-- Example Bootstrap Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index:99999;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+        <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close" id="close-btn">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 class='text-center'>Check Your email that was sent from <b>artsgptccherthala@gmail.com</b> while your registration</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div id="modal" class="popupContainer" style="display: none">
+      <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </div>
+
+      <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+          <div class="action_btns">
+            <div class="one_half">
+              <a href="#" id="login_form" class="btn">Login</a>
+            </div>
+            <div class="one_half last">
+              <a href="#" id="register_form" class="btn">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+          <form action="{% url 'user_login' %}" method="post">
+            {% csrf_token %}
+            <label>Admission No:<br><small><b>(You can found it on your College ID)</b></small></label>
+            <input
+              name="student_admn_no"
+              type="text"
+              id="student_admn_no_login"
+              maxlength="4"
+              size="4"
+              required
+            />
+            <br />
+
+            <label>Password</label>
+            <input name="password" type="password" id="password" />
+            <br />
+
+            
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="btn back_btn"
+                  ><i class="fa fa-angle-double-left"></i> Back</a
+                >
+              </div>
+              <div class="one_half last">
+                <button type="submit" class="btn btn_red">Login</button>
+              </div>
+            </div>
+          </form>
+
+          <a href="#" class="forgot_password" id="forgotPassword">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+          <form action="{% url 'register' %}" method="post" class="reg-form">
+            {% csrf_token %}
+            <div class="input-box">
+              <label>Admission No:<br><small><b>(You can found it on your College ID)</b></small></label>
+              <input
+                type="text"
+                name="student_admn_no"
+                id="student_admn_no"
+                maxlength="4"
+                size="4"
+                oninput="fetchStudentName(this.value)"
+                required
+              />
+              <small class="error" id="res1"></small>
+            </div>
+            <div class="input-box">
+              <label>Full Name</label>
+              <input
+                type="text"
+                name="student_name"
+                id="student_name"
+                required
+              />
+              <small class="error" id="res_name"></small>
+            </div>
+            <div class="column">
+              <div class="input-box">
+                <label>Email Address</label>
+                <input
+                  type="text"
+                  name="student_email"
+                  id="student_email"
+                  required
+                />
+                <small class="error" id="res_email"></small>
+              </div>
+              <div class="input-box">
+                <label>Phone Number</label>
+                <input
+                  type="text"
+                  name="student_phone"
+                  id="student_phone"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                  size="10"
+                  required
+                />
+                <small class="error" id="res_phone"></small>
+              </div>
+            </div>
+            <div class="column">
+              <div class="input-box">
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="student_password"
+                  id="student_password"
+                  required
+                />
+                <small class="error" id="res_pwd"></small>
+              </div>
+              <div class="input-box">
+                <label>Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  required
+                />
+                <small class="error" id="res_cpwd"></small>
+              </div>
+              <div class="input-box">
+                <label>Select Gender</label>
+                <div class="radio-options">
+                  <label for="male">
+                    <input
+                      type="radio"
+                      name="gender"
+                      class="gender"
+                      id="male"
+                      value="Male"
+                      required
+                    />
+                    Male
+                  </label>
+                  <label for="female">
+                    <input
+                      type="radio"
+                      name="gender"
+                      class="gender"
+                      id="female"
+                      value="Female"
+                      required
+                    />
+                    Female
+                  </label>
+                </div>
+                <small class="error" id="res_gndr"></small>
+              </div>
+            </div>
+
+            <!-- Your existing form code -->
+
+            <div class="text-center action_btns">
+              <button
+                type="submit"
+                class="btn btn_red mt-4"
+                style="width: 100%"
+                id="submit_button"
+              >
+                Submit
+              </button>
+              <a href="#" class="btn back_btn mt-4 ml-4 mr-4"
+                ><i class="fa fa-angle-double-left"></i> Back</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    {% block content %} {% endblock content %}
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              © Powered by Government Polytechnic College, Cherthala.
+              <a href="#">&nbsp; Art Fest </a> 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function fetchStudentName(admnNo) {
+          {% for student in AllStudents %}
+            var h={{ student.admn_no }};
+              if (admnNo.toString() == h.toString() ) {
+                  document.getElementById('student_name').value = '{{ student.student_name }}';
+                  return;
+              }
+          {% endfor %}
+          // If the loop completes without finding a matching student, clear the content
+          document.getElementById('student_name').value = '';
+      }
+      // Use jQuery to show the modal when the link is clicked
+      $(document).on("click", "#forgotPasswordLink", function () {
+        $("#forgotPasswordModal").modal("show");
+      });
+      $(document).on("click", "#forgotPassword", function () {
+        $("#forgotPasswordModal").modal("show");
+      });
+      $(document).on("click", "#close-btn", function () {
+        $("#forgotPasswordModal").modal("hide");
+      });
+  </script>
+  
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/popup.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/registration.js' %}"></script>
+  </body>
+</html>
