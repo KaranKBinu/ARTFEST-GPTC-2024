@@ -39,11 +39,7 @@
       href="{% static 'https://unpkg.com/swiper@7/swiper-bundle.min.css' %}"
     />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
-
+    
     <style>
       .msg{
         margin:100px 100px 10px 100px;
@@ -72,6 +68,53 @@ https://templatemo.com/tm-576-snapx-photography
         height:65%;
         margin-bottom:4px;
       }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+       
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-left:140px;
+        
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+  
+      .dropdown-item {
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+      }
+  
+      .dropdown-item:hover {
+        background-color: #ddd;
+      }
+      @media screen and (max-width: 600px) {
+        .dropdown-content {
+          position: static;
+          box-shadow: none;
+          margin-left: 18%;
+        }
+      
+        .dropdown:hover .dropdown-content {
+          display: none;
+        }
+      
+        .dropdown:hover .dropdown-content,
+        .dropdown-content:hover {
+          display: block;
+        }
+      }
 
     </style>
   </head>
@@ -85,7 +128,7 @@ https://templatemo.com/tm-576-snapx-photography
             <nav class="main-nav">
               <!-- ** Logo Start ** -->
               <a href="{% url 'index' %}" class="logo">
-                <img src="{% static 'assets/images1/favicon.png' %}" alt="Logo" class="logo-img"/>
+                <img src="{% static 'assets/images1/artslogo.jpg' %}" alt="Logo" class="logo-img"/>
               </a>
               <!-- ** Logo End ** -->
               <!-- ** Menu Start ** -->
@@ -97,14 +140,13 @@ https://templatemo.com/tm-576-snapx-photography
               </ul>
               {% if user.is_authenticated %}
               <div class="dropdown border-button">
-                <a id="user-icon" href="#" class="sign-in-up" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a id="user-icon" href="#" class="sign-in-up" role="button" id="dropdownMenuLink">
                   <i class="fa fa-user"></i> {{ request.user.username }}
                 </a>
               
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-content text-center" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="{% url 'select_categories' %}">Profile</a>
                   <a class="dropdown-item" href="#" id="forgotPasswordLink">Forgot Password</a>
-
                   <a class="dropdown-item" href="{% url 'user_logout' %}">Logout</a>
                 </div>
               </div>
@@ -370,6 +412,9 @@ https://templatemo.com/tm-576-snapx-photography
       $(document).on("click", "#close-btn", function () {
         $("#forgotPasswordModal").modal("hide");
       });
+
+        $.noConflict();
+
   </script>
   
 

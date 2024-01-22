@@ -51,6 +51,7 @@
   <p class="col-12 text-center">No User Details Found.</p>
   {% endif %}
 </div>
+<h2>Select categories</h2>
 <form method="post" action="{% url 'select_categories' %}">
   {% csrf_token %}
   <div class="table-responsive">
