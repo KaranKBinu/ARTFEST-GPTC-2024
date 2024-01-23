@@ -51,7 +51,7 @@
   <p class="col-12 text-center">No User Details Found.</p>
   {% endif %}
 </div>
-<h2>Select categories</h2>
+<h2 class="text-center">Select categories</h2>
 <form method="post" action="{% url 'select_categories' %}">
   {% csrf_token %}
   <div class="table-responsive">
@@ -94,6 +94,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    showToast("caution:A student can only participate in 4 individual items and 2 group items in total");
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     let soloCount = 0;
     let groupCount = 0;
