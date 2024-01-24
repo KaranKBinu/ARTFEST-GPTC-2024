@@ -202,7 +202,7 @@ def contact_form(request):
 
 
 def index(request):
-    return render(request, "index.html", get_common_data())
+    return redirect("https://artsfest2024gptccherthala.xyz/")
 
 
 def sample(request):
