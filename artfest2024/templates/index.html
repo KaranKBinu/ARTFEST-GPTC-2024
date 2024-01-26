@@ -1,5 +1,11 @@
 {% extends "main.html" %} {% load static %} {% block content %}
-
+<style>
+  .card{
+    background-color:rgba(0,  0, 0, 0.492);
+    box-shadow:2px 3px 4px;
+    border-radius:30px;
+  }
+</style>
 <!-- ***** Main Banner Area Start ***** -->
 <div
   class="main-banner"
@@ -9,19 +15,30 @@
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
         <div class="header-text">
-          <h2>Welcome to <em>Arts Fest</em> 2024.</h2>
-          <p>
-            "GPTC Cherthala Wecomes you to the Fabulous Arts Fest, where
-            creativity comes to life!. Immerse yourself in a vibrant celebration
-            of artistic expression, showcasing talent from various genres. Join
-            us on a journey of inspiration, innovation, and the boundless beauty
-            of the artistic spirit."
-          </p>
+          <section class="featured-items" id="featured-items">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 ">
+                     <div class="owl-features  owl-carousel" style="position: relative; z-index: 5">
+                        {% for notification in notifications %}
+                           <div class="item row">
+                            <div class="card border-primary">
+                             
+                                  <h3 class="card-title" style="color:white;font-size:26px;margin-bottom:-20%;font-weight:bold;">{{ notification.title }}</h3>
+                                  <hr>
+                                  <p class="card-text" style="color:white;font-weight:bold;">{{ notification.message }}</p>
+                       <hr>
+                          </div>
+                          
+                           </div>
+                        {% endfor %}
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </section>
           <div class="buttons">
             <div class="icon-button">
-              <a href="https://youtube.com/templatemo" target="_blank"
-                ><i class="fa fa-play"></i> Watch Our Video Now</a
-              >
             </div>
           </div>
         </div>
@@ -29,7 +46,27 @@
     </div>
   </div>
 </div>
+
+
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  // Initialize Owl Carousel
+  $(document).ready(function(){
+     $(".owl-features").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 8000, // Set the timeout for each notification
+        autoplayHoverPause: true,
+        
+     });
+  });
+</script>
+
 <!-- ***** Main Banner Area End ***** -->
+
 
 <section class="featured-items" id="featured-items">
   <div class="container">
@@ -121,10 +158,13 @@
         <div class="main-button">
           <a href="{% url 'categories' %}">Discover All Categories</a>
         </div>
+
       </div>
+      
     </div>
   </div>
 </section>
+
 
 <section class="portfolio">
   <div class="container">
@@ -195,7 +235,10 @@
         <div class="info-item">
           <i class="fa fa-phone"></i>
           <h4>Phone Numbers</h4>
-          <span>9847524758</span>
+          <a href="tel:9847524758" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Ph No 1: 9847524758</a><br>
+          <a href="tel:8078285708" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Chairman - Vidul Krishna: 8078285708</a><br>
+          <a href="tel:7736887427" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Arts Secretary - Aiswarya T H: 7736887427</a>    
+          
         </div>
       </div>
       <div class="col-lg-4">

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <style>
-        /* Add your styles here */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -17,28 +16,55 @@
         }
         h1 {
             color: #007BFF;
-            text-align:center;
+            text-align: center;
         }
         .program {
             margin-bottom: 10px;
-            font-weight:bold;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        tfoot {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Greetings from Arts Fest 2024 program committee!</h1>
-        <p>You have selected for the following programs:</p><ol>
-        {% for program_detail in selected_program_details %}
-            <div class="program">
-                
-                <li>
-                <p>{{ program_detail.program_name }} [ Chess No: {{ program_detail.chess_no }} ]</p>
-                </li>
-            </div>
-        {% endfor %}
-        </ol>
-     </div>
-     <p class="text-center">Password for User : {{ userdetails.student_admn_no }} is:<b> {{ userdetails.student_password }}</b></p>
+        <p>You have registered for the following programs:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Program Name</th>
+                    <th>Chest No</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for program_detail in selected_program_details %}
+                    <tr>
+                        <td>{{ program_detail.program_name }}</td>
+                        <td>{{ program_detail.chess_no }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Password for User: {{ userdetails.student_admn_no }} is: <b>{{ userdetails.student_password }}</b></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

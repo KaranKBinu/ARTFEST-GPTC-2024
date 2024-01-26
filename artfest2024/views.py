@@ -1,9 +1,10 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import Programs, StudentUsers
+from .models import Notification, Programs, StudentUsers
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from .models import StudentUsers, StudentDetails
 import pandas as pd
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.db import transaction
 from django.contrib.auth import authenticate, login
@@ -61,7 +62,7 @@ def register(request):
         house_name = StudentDetails.objects.get(admn_no=student_admn_no).house
         if User.objects.filter(email=student_email).exists():
             messages.error(request, "email already exists")
-            return render(request, "index.html", {"messages": messages})
+            return redirect(index)
         # Check if the student admission number already exists in StudentDetails
         if not StudentDetails.objects.filter(admn_no=student_admn_no).exists():
             messages.error(
@@ -81,9 +82,15 @@ def register(request):
                 )
 
             # Create a new User instance (Django User model)
-            user = User.objects.create_user(
-                username=student_admn_no, email=student_email, password=student_password
-            )
+            if User.objects.filter(username=student_admn_no).exists():
+                messages.error(request, "Admission Number already exists")
+                return redirect("index")
+            else:
+                user = User.objects.create_user(
+                    username=student_admn_no,
+                    email=student_email,
+                    password=student_password,
+                )
 
             student = StudentUsers.objects.create(
                 student_admn_no=student_admn_no,
@@ -120,11 +127,18 @@ def register(request):
     )
 
 
+@login_required(login_url="index")
 def select_categories(request):
     user_admn_no = request.session.get("user_admn_no")
-    userdetails = StudentUsers.objects.get(student_admn_no=user_admn_no)
-    programs = Programs.objects.all()
-
+    if user_admn_no is not None:
+        userdetails = StudentUsers.objects.get(student_admn_no=user_admn_no)
+        programs = Programs.objects.all()
+    else:
+        messages.error(
+            request,
+            "may Be there is an Error occured while Authentication,Try Refreshing",
+        )
+        return redirect("index")
     if request.method == "POST":
         selected_programs = request.POST.getlist("selected_programs")
         with transaction.atomic():
@@ -167,7 +181,8 @@ def select_categories(request):
             )
 
             messages.success(
-                request, "Program choices updated successfully and email sent."
+                request,
+                "Program choices updated successfully and an email sent to your registered email.",
             )
 
     return render(
@@ -201,12 +216,14 @@ def contact_form(request):
     return redirect("index")  # Replace with your actual template name
 
 
+# def index(request):
+#     return redirect("https://artsfest2024gptccherthala.xyz/")
 def index(request):
-    return redirect("https://artsfest2024gptccherthala.xyz/")
-
-
-def sample(request):
-    return render(request, "sample.html", get_common_data())
+    messages.success(request, "welcome")
+    notifications = Notification.objects.filter(is_shown=True)
+    return render(
+        request, "index.html", {**get_common_data(), "notifications": notifications}
+    )
 
 
 def categories(request):
@@ -220,12 +237,36 @@ def contests(request):
     return render(request, "contests.html", get_common_data())
 
 
-def users(request):
-    return render(request, "users.html", get_common_data())
+from django.shortcuts import render
+from .models import StudentUsers, Programs
 
 
 def contest_details(request):
-    return render(request, "contest_details.html", get_common_data())
+    # Get the filter parameters from the request
+    house_filter = request.GET.get("house", "")
+    program_filter = request.GET.get("program", "")
+
+    # Filter students based on house and program_name
+    students = StudentUsers.objects.all()
+    if house_filter:
+        students = students.filter(house_name=house_filter)
+    if program_filter:
+        students = students.filter(program__program_name=program_filter)
+
+    # Get all distinct house names and program names for filtering options
+    houses = StudentUsers.objects.values_list("house_name", flat=True).distinct()
+    programs = Programs.objects.values_list("program_name", flat=True).distinct()
+
+    context = {
+        "students": students,
+        "houses": houses,
+        "programs": programs,
+        "selected_house": house_filter,
+        "selected_program": program_filter,
+        **get_common_data(),
+    }
+
+    return render(request, "contest_details.html", context)
 
 
 # def upload_and_process_excel(request):
