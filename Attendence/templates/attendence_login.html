@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<head>
+    <title>Attendence for Arts Fest 2024</title>
+    <style>
+        .login-container {
+            display: block;
+            background-color: rgb(243, 250, 255);
+            margin-left: 25%;
+            margin-top: 10%;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 4px 3px 6px rgb(170, 170, 170);
+            width: 50%;
+        }
+
+        .login-heading {
+            text-align: center;
+            color: rgb(0, 170, 255);
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        .underline-heading {
+            background-color: rgb(0, 170, 255);
+            width: 30%;
+            height: 2px;
+            display: flex;
+            border: none;
+            border-radius: 40px;
+        }
+
+        .underline-heading2 {
+            background-color: rgb(0, 170, 255);
+            width: 20%;
+            height: 3px;
+            display: flex;
+            border: none;
+            border-radius: 40px;
+        }
+
+        .login-form {
+            text-align: center;
+            align-content: center;
+            margin-top: 5%;
+        }
+
+        .login-form .form-input {
+            border-radius: 10px;
+            height: 40px;
+            width: 50%;
+            outline-color: rgb(0, 170, 255);
+            border: 0.01px solid rgb(0, 170, 255);
+            box-shadow: 4px 3px 6px rgb(170, 170, 170) inset;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+
+        .form-input[type='submit'] {
+            background-color: rgb(0, 149, 255);
+            box-shadow: 4px 3px 6px rgb(170, 170, 170);
+            border: none;
+            width: 25%;
+            color: white;
+        }
+
+        .form-input[type='submit']:focus {
+            background-color: rgb(81, 197, 255);
+            box-shadow: 1px 1px 7px rgb(137, 137, 137) inset;
+        }
+
+        .form-input[type='submit']:hover {
+            background-color: rgb(81, 197, 255);
+
+        }
+
+        .password-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .password-toggler {
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: rgb(0, 170, 255);
+            position: absolute;
+            margin-top: 20px;
+            margin-right: 10px;
+            background-color: rgb(255, 253, 253);
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 4px 3px 6px rgb(170, 170, 170) inset;
+            text-transform: uppercase;
+        }
+
+
+
+        @media(max-width: 767px) {
+            .login-container {
+                margin-left: 0%;
+                margin-top: 40%;
+                width: 100%;
+                padding: 0%;
+            }
+
+            .login-form .form-input {
+                width: 80%;
+            }
+
+            .form-input[type='submit'] {
+                width: 45%;
+            }
+
+            .password-container {
+                position: relative;
+                width: 100%;
+            }
+
+            .password-toggler {
+                position: absolute;
+                margin-top: 20px;
+                right: 30px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                color: rgb(0, 170, 255);
+            }
+        }
+    </style>
+</head>
+<div class="login-container">
+    <h2 class="login-heading">Co-Ordnator Login</h2>
+    <hr class="underline-heading">
+    <hr class="underline-heading2">
+    <form action="{% url 'attendence_login' %}" method="POST" class="login-form">
+        {% csrf_token %}
+        <input type="text" class="form-input" placeholder="Enter Your Username" name="coordinator_username"
+            id="username">
+
+        <div class="password-container">
+            <input type="password" class="form-input" placeholder="Password given By Admin" id="pwd"
+                name="coordinator_password">
+            <span class="password-toggler" id="password-toggler" onclick="togglePassword()">show</span>
+        </div>
+        <input type="submit" class="form-input">
+    </form>
+</div>
+<script>
+    function togglePassword() {
+        var passwordInput = document.getElementById('pwd');
+        var passwordToggler = document.getElementById('password-toggler');
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            passwordToggler.textContent = 'hide';
+        } else {
+            passwordInput.type = 'password';
+            passwordToggler.textContent = 'show';
+        }
+    }
+</script>
+
+{% endblock %}
