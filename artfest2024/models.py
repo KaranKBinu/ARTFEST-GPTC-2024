@@ -14,10 +14,7 @@ class StudentDetails(models.Model):
 
 
 class Programs(models.Model):
-    PROGRAM_CHOICES = (
-        ("individual", "individual"),
-        ("Group", "Group"),
-    )
+    PROGRAM_CHOICES = (("individual", "individual"),)
     GENDER_CHOICES = (
         ("male", "Male"),
         ("female", "Female"),
@@ -50,6 +47,20 @@ class StudentUsers(models.Model):
 
     def __str__(self):
         return f"{self.house_name} - {self.student_admn_no}"
+
+
+class GroupProgram(models.Model):
+    program = models.OneToOneField(
+        Programs, on_delete=models.CASCADE, related_name="group_program"
+    )
+    group_leader = models.CharField(max_length=4, default="")
+    max_number_of_people = models.IntegerField(default=1)
+    group_members = models.ManyToManyField(StudentUsers)
+
+    def __str__(self):
+        return (
+            f"Group Program: {self.program.program_name} - leader: {self.group_leader}"
+        )
 
 
 class ContactMessage(models.Model):

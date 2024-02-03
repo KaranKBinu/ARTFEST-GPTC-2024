@@ -21,6 +21,12 @@ class AttendanceAdmin(admin.ModelAdmin):
         "stage",
         "program",
     )
+    list_filter = (
+        "period",
+        "co_ordinator",
+        "stage",
+        "program",
+    )
 
     actions = ["download_excel"]
 
@@ -28,9 +34,9 @@ class AttendanceAdmin(admin.ModelAdmin):
         response = HttpResponse(
             content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
-        response[
-            "Content-Disposition"
-        ] = 'attachment; filename="attendance_report.xlsx"'
+        response["Content-Disposition"] = (
+            'attachment; filename="attendance_report.xlsx"'
+        )
 
         workbook = Workbook()
         worksheet = workbook.active
@@ -68,14 +74,14 @@ class AttendanceAdmin(admin.ModelAdmin):
             worksheet.cell(
                 row=row_num, column=1, value=attendance.student_admn_no
             ).alignment = Alignment(horizontal="center", vertical="center")
-            worksheet.cell(
-                row=row_num, column=2, value=attendance.period
-            ).alignment = Alignment(horizontal="center", vertical="center")
+            worksheet.cell(row=row_num, column=2, value=attendance.period).alignment = (
+                Alignment(horizontal="center", vertical="center")
+            )
 
             time_ist = attendance.time.astimezone(ist).replace(tzinfo=None)
-            worksheet.cell(
-                row=row_num, column=3, value=time_ist
-            ).style = time_column_style
+            worksheet.cell(row=row_num, column=3, value=time_ist).style = (
+                time_column_style
+            )
             worksheet.cell(row=row_num, column=3).alignment = Alignment(
                 horizontal="center", vertical="center"
             )
@@ -94,9 +100,9 @@ class AttendanceAdmin(admin.ModelAdmin):
             ).alignment = Alignment(horizontal="center", vertical="center")
 
         # Set the width for the "Time" column
-        worksheet.column_dimensions[
-            get_column_letter(3)
-        ].width = 20  # Adjust the width as needed
+        worksheet.column_dimensions[get_column_letter(3)].width = (
+            20  # Adjust the width as needed
+        )
 
         workbook.save(response)
 

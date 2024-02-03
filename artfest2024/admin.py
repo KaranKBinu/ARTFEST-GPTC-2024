@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Programs, StudentDetails, StudentUsers, ContactMessage
+from .models import GroupProgram, Programs, StudentDetails, StudentUsers, ContactMessage
 from django.contrib import admin
 from .models import StudentUsers, Notification
 from .admin_actions import export_to_excel
@@ -35,7 +35,7 @@ class StudentUsersAdmin(admin.ModelAdmin):
 
 
 admin.site.register(StudentUsers, StudentUsersAdmin)
-
+admin.site.register(GroupProgram)
 
 admin.site.register(Programs)
 
