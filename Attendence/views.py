@@ -15,47 +15,51 @@ def attendence_index(request):
         # Retrieve attendance data from the database
         coordinator_username = request.session.get("coordinator_username")
         print(coordinator_username)
+        try:
+            # Retrieve the coordinator object
+            coordinator = Co_ordinator.objects.get(
+                user_name_for_coordinator=coordinator_username
+            )
+            program_of_coordinator = coordinator.program
 
-        # Retrieve the coordinator object
-        coordinator = Co_ordinator.objects.get(
-            user_name_for_coordinator=coordinator_username
-        )
-        program_of_coordinator = coordinator.program
+            student_data = StudentUsers.objects.filter(program=program_of_coordinator)
+            print(student_data)
 
-        student_data = StudentUsers.objects.filter(program=program_of_coordinator)
-        print(student_data)
-
-        if request.method == "POST":
-            # Process the attendance form submission
-            period = request.POST.get("period")
-            stage_id = request.POST.get("stage")
-            stage = Stage.objects.get(id=stage_id)
-            for student in student_data:
-                attendance_status = request.POST.get(
-                    f"attendance_{student.student_admn_no}",
-                )
-
-                if attendance_status == "1":
-                    # Assuming the form field names are like 'attendance_<student_admn_no>'
-                    attendance = Attendance.objects.create(
-                        student_admn_no=student.student_admn_no,
-                        period=period,
-                        attendance=True,
-                        co_ordinator=coordinator_username,
-                        stage=stage,
-                        program=program_of_coordinator,
+            if request.method == "POST":
+                # Process the attendance form submission
+                period = request.POST.get("period")
+                stage_id = request.POST.get("stage")
+                stage = Stage.objects.get(id=stage_id)
+                for student in student_data:
+                    attendance_status = request.POST.get(
+                        f"attendance_{student.student_admn_no}",
                     )
-                    attendance.save()
 
-        stages = Stage.objects.all()
-        context = {
-            "student_data": student_data,
-            "stages": stages,
-            "PERIOD_CHOICES": Attendance.PERIOD_CHOICES,
-            "program_of_coordinator": program_of_coordinator,
-            "coordinator": coordinator,
-        }
+                    if attendance_status == "1":
+                        # Assuming the form field names are like 'attendance_<student_admn_no>'
+                        attendance = Attendance.objects.create(
+                            student_admn_no=student.student_admn_no,
+                            period=period,
+                            attendance=True,
+                            co_ordinator=coordinator_username,
+                            stage=stage,
+                            program=program_of_coordinator,
+                        )
+                        attendance.save()
 
+            stages = Stage.objects.all()
+            context = {
+                "student_data": student_data,
+                "stages": stages,
+                "PERIOD_CHOICES": Attendance.PERIOD_CHOICES,
+                "program_of_coordinator": program_of_coordinator,
+                "coordinator": coordinator,
+            }
+        except:
+            messages.error(
+                request,
+                "Something error occurred, sorry, contact the site administrator",
+            )
         return render(request, "attendence_index.html", context)
     else:
         return redirect("attendence_login")

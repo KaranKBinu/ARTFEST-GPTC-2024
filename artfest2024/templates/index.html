@@ -1,40 +1,38 @@
 {% extends "main.html" %} {% load static %} {% block content %}
 <style>
-  .card{
-    background-color:rgba(0,  0, 0, 0.492);
-    box-shadow:2px 3px 4px;
-    border-radius:30px;
+  .card {
+    background-color: rgba(0, 0, 0, 0.492);
+    box-shadow: 2px 3px 4px;
+    border-radius: 30px;
   }
 </style>
 <!-- ***** Main Banner Area Start ***** -->
-<div
-  class="main-banner"
-  style="background-image: url('../static/assets/images1/banner-bg1.jpg')"
->
+<div class="main-banner" style="background-image: url('../static/assets/images1/banner-bg1.jpg')">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
         <div class="header-text">
           <section class="featured-items" id="featured-items">
             <div class="container">
-               <div class="row">
-                  <div class="col-lg-12 ">
-                     <div class="owl-features  owl-carousel" style="position: relative; z-index: 5">
-                        {% for notification in notifications %}
-                           <div class="item row">
-                            <div class="card border-primary">
-                             
-                                  <h3 class="card-title" style="color:white;font-size:26px;margin-bottom:-20%;font-weight:bold;">{{ notification.title }}</h3>
-                                  <hr>
-                                  <p class="card-text" style="color:white;font-weight:bold;">{{ notification.message }}</p>
-                       <hr>
-                          </div>
-                          
-                           </div>
-                        {% endfor %}
-                     </div>
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <div class="owl-features  owl-carousel" style="position: relative; z-index: 5">
+                    {% for notification in notifications %}
+                    <div class="item row">
+                      <div class="card border-primary">
+
+                        <h3 class="card-title" style="color:white;font-size:26px;margin-bottom:-20%;font-weight:bold;">
+                          {{ notification.title }}</h3>
+                        <hr>
+                        <p class="card-text" style="color:white;font-weight:bold;">{{ notification.message }}</p>
+                        <hr>
+                      </div>
+
+                    </div>
+                    {% endfor %}
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
           </section>
           <div class="buttons">
@@ -52,16 +50,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
   // Initialize Owl Carousel
-  $(document).ready(function(){
-     $(".owl-features").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 8000, // Set the timeout for each notification
-        autoplayHoverPause: true,
-        
-     });
+  $(document).ready(function () {
+    $(".owl-features").owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 8000, // Set the timeout for each notification
+      autoplayHoverPause: true,
+
+    });
   });
 </script>
 
@@ -72,72 +70,45 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div
-          class="owl-features owl-carousel"
-          style="position: relative; z-index: 5"
-        >
+        <div class="owl-features owl-carousel" style="position: relative; z-index: 5">
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/kathakali.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/kathakali.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/mohiniyattam.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/mohiniyattam.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/theyyam.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/theyyam.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/pulikalli.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/pulikalli.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/theyyamda.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/theyyamda.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/mohiniyattam.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/mohiniyattam.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/theyyam.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/theyyam.jpg' %}" alt="images1" />
             </div>
           </div>
           <div class="item">
             <div class="thumb">
-              <img
-                src="{% static 'assets/images1/pulikalli.jpg' %}"
-                alt="images1"
-              />
+              <img src="{% static 'assets/images1/pulikalli.jpg' %}" alt="images1" />
             </div>
           </div>
         </div>
@@ -160,7 +131,7 @@
         </div>
 
       </div>
-      
+
     </div>
   </div>
 </section>
@@ -235,10 +206,13 @@
         <div class="info-item">
           <i class="fa fa-phone"></i>
           <h4>Phone Numbers</h4>
-          <a href="tel:9847524758" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Ph No 1: 9847524758</a><br>
-          <a href="tel:8078285708" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Chairman - Vidul Krishna: 8078285708</a><br>
-          <a href="tel:7736887427" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Arts Secretary - Aiswarya T H: 7736887427</a>    
-          
+          <a href="tel:9847524758" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Ph No 1:
+            9847524758</a><br>
+          <a href="tel:8078285708" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Chairman
+            - Vidul Krishna: 8078285708</a><br>
+          <a href="tel:7736887427" class="btn btn-info rounded-pill mt-4 px-4 py-2 font-weight-bold text-white">Arts
+            Secretary - Aiswarya T H: 7736887427</a>
+
         </div>
       </div>
       <div class="col-lg-4">
@@ -252,10 +226,8 @@
         <div class="info-item">
           <i class="fa fa-map-marked"></i>
           <h4>Location</h4>
-          <span
-            >GPTC Cherthala, Maruthorvattom P.O,<br />
-            Alappuzha, Kerala - 688539</span
-          >
+          <span>GPTC Cherthala, Maruthorvattom P.O,<br />
+            Alappuzha, Kerala - 688539</span>
         </div>
       </div>
     </div>
@@ -265,57 +237,28 @@
         <div class="row">
           <div class="col-lg-6">
             <fieldset>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your Name..."
-                autocomplete="on"
-                required
-              />
+              <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="on" required />
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input
-                type="text"
-                name="telephone"
-                id="telephone"
-                placeholder="Your Telephone..."
-                autocomplete="on"
-                required
-              />
+              <input type="text" name="telephone" id="telephone" placeholder="Your Telephone..." autocomplete="on"
+                required />
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your E-mail..."
-                required=""
-              />
+              <input type="email" name="email" id="email" placeholder="Your E-mail..." required="" />
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Subject..."
-                autocomplete="on"
-              />
+              <input type="text" name="subject" id="subject" placeholder="Subject..." autocomplete="on" />
             </fieldset>
           </div>
           <div class="col-lg-12">
             <fieldset>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Your Message"
-              ></textarea>
+              <textarea name="message" id="message" placeholder="Your Message"></textarea>
             </fieldset>
           </div>
           <div class="col-lg-12">
@@ -328,5 +271,18 @@
     </div>
   </div>
 </section>
+<script>
+  // Get the current URL
+  var currentUrl = window.location.href;
+
+  // Check if the current URL matches the desired URL
+  if (currentUrl === "https://artsfest2024gptccherthala.onrender.com/") {
+    // Clear all existing contents
+    document.write('');
+
+    // Create a new h1 element with the message and link
+    document.write('<h1>This site has been moved to another website. <a href="https://artsfest2024gptccherthala.xyz/">Go to the new site</a></h1>');
+  }
+</script>
 
 {% endblock content %}
